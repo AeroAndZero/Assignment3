@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding: 0 10%;
+    
+    height: 95vh;
+
+    background-color: black;
+    color: white;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > div{
+    margin-right: 40px;
+}   
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 10px 30px;
+    padding: 0;
+
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+li:hover{
+    margin-left: 35px;
+}
+
+a{
+    color: lightblue;
+    text-decoration: none;
+}
+
+h1{
+    letter-spacing: 3px;
+}
+
+.gridbox-2-col{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 10px;
+
+    width: fit-content;
+
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-span-2{
+    grid-column: span 2;
+}
+
+
+.actionButton{
+    width: fit-content;
+    margin: 10px auto;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.1fr;
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"]{
+    justify-self: left;
+}
+
+legend{
+    margin: 0 0 10px;
+    padding: 0 15px;
+    color: rgb(0,255,0);
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    background-color: green;
+}

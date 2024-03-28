@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <a href="../index.html">&lt; Back</a>
+    </div>
+
+    <div>
+        <h1>Change calculator</h1>
+        <p></p>
+        <div class="gridbox-2-col">
+            <label>Enter amount of change due(0-99):</label>
+            <input type="number" placeholder="00" id="amount" />
+
+            <label>Quaters:</label>
+            <input type="text" placeholder="00" id="quaters" readonly/>
+
+            <label>Dimes:</label>
+            <input type="text" placeholder="00" id="dimes" readonly/>
+
+            <label>Nickles:</label>
+            <input type="text" placeholder="00" id="nickles" readonly/>
+
+            <label>Pennies:</label>
+            <input type="text" placeholder="00" id="pennies" readonly/>
+
+            <input type="button" value="Calculate" class="actionButton" id="btnCalculate">
+
+            <input type="button" value="Clear" class="actionButton" id="btnClear">
+        </div>
+
+        <p>&copy; Ayush Thakur [N01649393], 2024</p>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/changecal.js"></script>
+</body>
+</html>

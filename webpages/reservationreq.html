@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <a href="../index.html">&lt; Back</a>
+    </div>
+
+    <div>
+        <h1>Reservation Request</h1>
+        <form>
+            <fieldset>
+                <legend>General information</legend>
+
+                <label>Arrival date:</label>
+                <input type="date" id="arrivalDate" name="arrivalDate" />
+                <div id="arrivalDateErr" class="error"></div>
+                <br>
+
+                <label>Nights:</label>
+                <input type="number" id="night" placeholder="00" name="nights"/>
+                <div id="nightErr" class="error"></div>
+                <br>
+
+                <label>Adults:</label>
+                <select name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <div id="adultsErr" class="error"></div>
+                <br>
+                
+                <label>Children:</label>
+                <select name="children">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <div id="childrenErr" class="error"></div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <label>Room type:</label>
+                <div>
+                    <input type="radio" id="roomTypeStandard" name="roomType" value="Standard"/> Standard
+                    <br>
+                    <input type="radio" id="roomTypeBusiness" name="roomType" value="Business"/> Business
+                    <br>
+                    <input type="radio" id="roomTypeSuite" name="roomType" value="Suite"/> Suite
+                </div>
+                <div id="roomTypeErr" class="error"></div>
+                <br>
+
+                <label>Bed type:</label>
+                <div>
+                    <input type="radio" id="bedTypeKing" name="bedType" value="King"/> King
+                    <br>
+                    <input type="radio" id="bedTypeDoubleDouble" name="bedType" value="Double Double"/> Double Double
+                </div>
+                <div id="bedTypeErr" class="error"></div>
+                <br>
+
+                <label>Smoking</label>
+                <input  type="checkbox" name="smoking" /> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label>Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="your fullname" />
+                <div id="fullnameErr" class="error"></div>
+                <br>
+
+                <label>Email:</label>
+                <input type="email" id="email" name="email" placeholder="youremail@domain.com" />
+                <div id="emailErr" class="error"></div>
+                <br>
+                
+                <label>Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="XXX-XXX-XXXX" />
+                <div id="phoneErr" class="error"></div>
+                <br>
+            </fieldset>
+
+            <input type="submit" id="btnSubmit" value="Submit Request" class="actionButton">
+            <div class="success" id="logger"></div>
+            <p>&copy; Ayush Thakur [N01649393], 2024</p>
+        </form>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/reservationreq.js"></script>
+</body>
+</html>

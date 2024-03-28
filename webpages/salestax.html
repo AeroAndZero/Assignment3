@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax Calculator</title>
+    <link href="../css/common.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <a href="../index.html">&lt; Back</a>
+    </div>
+
+    <div>
+        <h1>Sales Tax Calculator</h1>
+        <p>Enter subtotal and tax rate and click 'calculate'</p>
+        <div class="gridbox-2-col">
+            <label>Subtotal:</label>
+            <input type="number" placeholder="000.00" id="subtotal" min="0" max="10000"/>
+            
+            <label>Tax rate:</label>
+            <input type="number" placeholder="00.00" id="taxRate" min="0" max="12"/>
+
+            <label>Sales tax:</label>
+            <input type="text" placeholder="000.00" id="salesTax" readonly/>
+
+            <label>Total:</label>
+            <input type="text" placeholder="000.00" id="total" readonly/>
+
+            <input type="button" value="Calculate" class="actionButton"
+            id="btnCalculate">
+
+            <input type="button" value="Clear" class="actionButton" id="btnClear">
+        </div>
+
+        <p>&copy; Ayush Thakur [N01649393], 2024</p>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/salestax.js"></script>
+</body>
+</html>
